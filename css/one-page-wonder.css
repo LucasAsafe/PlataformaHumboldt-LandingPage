@@ -5,7 +5,7 @@
  */
 html,
 body {
-   font-family: 'Lato';
+   font-family: 'Raleway';
    height: 100%;
    width: 100%;
    margin: 0;
@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Catamaran';
+  font-family: 'Muli';
   font-weight: 800 !important;
 }
 
@@ -36,15 +36,50 @@ h6 {
   border-radius: 5rem;
 }
 
+.bg {
+  background-image: url("https://d3dhayegfge90.cloudfront.net/amazon.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 
+.devasted{
+  background-image: url("https://d3dhayegfge90.cloudfront.net/IMG_9613.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.beaut{
+  background-image: url("https://d3dhayegfge90.cloudfront.net/bRainforest.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+
+
+.saiba{
+  text-decoration: underline dotted !important;
+}
 .navbar-custom {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background-color:#fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px;
+
 }
 
-section{
-    width: 100vw;
-    height: 100vh;
+.heading{
+  color: #007D00 !important;
+}
+
+.bg-heading{
+  background-color: #007D00 !important;
+  color: #fff !important;
 }
 
 .navbar-custom .navbar-brand {
@@ -106,7 +141,13 @@ header.masthead .bg-circle-2 {
   top: -25rem;
   right: -25rem;
 }
-
+.hoverable{
+  cursor: pointer;
+  transition: all .3s ease-in-out; 
+}
+.hoverable:hover{
+  transform: scale(1.05);
+}
 header.masthead .bg-circle-3 {
   height: 20rem;
   width: 20rem;
