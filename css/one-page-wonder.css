@@ -35,10 +35,14 @@ h6 {
 .rounded-pill {
   border-radius: 5rem;
 }
+.bg-l{
+  background-color: #F5F5F5;  
+}
 
 .bg {
   background-image: url("https://d3dhayegfge90.cloudfront.net/amazon.jpg");
   height: 100%;
+  opacity: 0.9;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,9 +65,27 @@ h6 {
 } */
 
 
-
 .saiba{
-  text-decoration: underline dotted !important;
+    display: inline-block;
+    color: #007D00;
+    text-decoration: none;
+}
+.saiba:hover{
+  text-decoration: none;
+}
+
+.saiba::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #007D00;
+    transition: width .3s;
+}
+
+.saiba:hover::after {
+    width: 100%;
+    /* transition: width .3s; */
 }
 .navbar-custom {
   padding-top: 1.5rem;
