@@ -10,6 +10,7 @@ body {
    width: 100%;
    margin: 0;
   overflow-x: hidden !important;
+  /*line-height: 0.2rem;*/
  }
 h1,
 h2,
@@ -21,18 +22,107 @@ h6 {
   font-weight: 800 !important;
 }
 
+@media (min-width: 1281px) {
+  .over {
+    height: auto;
+    width: auto;
+    max-width: 400px;
+    max-height: 200px;
+
+    position: absolute;
+    left: 0;
+    margin-top: 16rem;
+    margin-left: 29rem;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .over {
+    height: auto;
+    width: auto;
+    max-width: 400px;
+    max-height: 200px;
+
+    position: absolute;
+    left: 0;
+    margin-top: 18rem;
+    margin-left: 40rem;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .over {
+    height: auto;
+    width: auto;
+    max-width: 400px;
+    max-height: 200px;
+
+    position: absolute;
+    left: 0;
+    margin-top: 14rem;
+    margin-left: 23rem;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .over {
+    height: auto;
+    width: auto;
+    max-width: 400px;
+    max-height: 200px;
+
+    position: absolute;
+    left: 0;
+    margin-top: 20rem;
+    margin-left: 45rem;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .over {
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 100px;
+
+    position: absolute;
+    left: 0;
+    margin-top: 10rem;
+    margin-left: 18rem;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .over {
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 50px;
+
+    position: absolute;
+    left: 0;
+    margin-top: 7rem;
+    margin-left: 13rem;
+    top: 0;
+    z-index: 1;
+  }
+}
+
 .under {
   z-index: 1;
 }
 
-.over {
-  position: absolute;
-  left: 0;
-  margin-top: 20rem;
-  margin-left: 45rem;
-  top: 0;
-  z-index: 1;
-}
+
 
 .divImgs{
   height: 100%;
