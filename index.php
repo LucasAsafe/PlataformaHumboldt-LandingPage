@@ -6,62 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <title>Humboldt</title>
-  <link href="https://fonts.googleapis.com/css?family=Muli|Raleway&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="css/one-page-wonder.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
 </head>
 
+<?php include_once 'header.html'; ?>
 <body id="pagetop">
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top" id="navbartag">
-        <a class="navbar-brand js-scroll-trigger heading" href="#pagetop">Humboldt</a>
-        <button class="navbar-toggler text-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger text-secondary" href="#about">Sobre nós</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger text-secondary" href="#propriedades">Propriedades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger text-secondary" href="#projetos">Projetos Ambientais</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger text-secondary" href="#titulos">Títulos Humboldt</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger text-secondary" href="#monitoramento">Monitoramento</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link bg-heading p-3" href="http://plataforma.humboldtbrasil.com/signup.php">Seja Humboldt</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link heading p-3" href="http://plataforma.humboldtbrasil.com/login.php">Login</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-
-<!--  <div class="container-fluid">-->
-<!--    <div id="slider" class="mt-5 mx-5 mb-3 mh-100 rounded beer-slider">-->
-<!--      <img  src="https://d3dhayegfge90.cloudfront.net/landing/IMG_9613.jpg" class="image" alt="Original man holding beer">-->
-<!--      <div class="beer-reveal">-->
-<!--        <img src="https://d3dhayegfge90.cloudfront.net/landing/bRainforest.jpg"   alt="Processed with logo and Lightroom presets">-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-    <div style="margin-top: 7rem" class="min-vh-100  container-fluid">
+<div style="margin-top: 9rem" class="min-vh-100  container-fluid">
       <div class="row h-100 justify-content-center align-items-center">
-<!--        <div class="col-12  mt-5">-->
-<!--          <h1 class="ml-5 text-secondary" style="font-family: 'Raleway', 'sans-serif'">Quanto vale o seu futuro?</h1>-->
-<!--        </div>-->
         <div class="col-xl-8 order-lg-2">
           <div style="border-radius: 5px;" id="slider" class="beer-slider">
             <img src="https://d3dhayegfge90.cloudfront.net/landing/IMG_9613.jpg" class="image img-fluid" alt="Original man holding beer">
@@ -92,7 +43,6 @@
             <div class="p-5">
               <h2 class="h1 heading">Nossa Solução</h2>
               <p class="lead">Monetizar estocagem de co2, biodiversidade, controle de temperatura e mananciais d'água <br> Plataforma de transações com ativos florestais.</p>
-              <a role="button" class="btn btn-link heading saiba" href="#">Saiba Mais</a>
             </div>
           </div>
         </div>
@@ -111,7 +61,7 @@
             <div class="p-5">
               <h2 class="h1 heading">Sua propriedade é a solução</h2>
               <p class="h4">Seja remunerado por preservar. </p>
-                <a role="button" class="btn btn-link heading saiba" href="#">Saiba Mais</a>
+                <a role="button" class=" heading saiba" href="propriedades.php">Saiba Mais</a>
             </div>
           </div>
         </div>
@@ -129,8 +79,8 @@
         <div class="col-xl-6 col-md-12 order-lg-1">
           <div class="p-5">
             <h2 class="h1 heading">Seja agente da mudança.</h2>
-            <p class="h4">Use sua expertise em preservação ou reflorestamento. </p>
-            <a role="button" class="btn btn-link heading saiba" href="#">Saiba Mais</a>
+              <p class="lead">As atividades de avaliação dos ativos ambientais e desenvolvimento de projetos de
+                  preservação e de reflorestamento são essenciais para conservação das florestas nativas. </p>
           </div>
         </div>
       </div>
@@ -150,7 +100,7 @@
                 <h2 class="h1 heading">Crie seu futuro!</h2>
                 <p class="h4">As florestas são reservas de valor. 
                   Garanta o futuro do planeta. </p>
-                  <a role="button" class="btn btn-link heading saiba" href="#">Saiba Mais</a>
+                  <a role="button" class=" heading saiba" href="titulos.php">Saiba Mais</a>
               </div>
             </div>
           </div>
@@ -168,16 +118,16 @@
           <div class="col-xl-4 col-md-12 order-lg-1">
             <div class="p-5">
               <h2 class="h1 heading">Medir é preservar.</h2>
-              <p class="h4">Acesse nossa base de dados sobre vegetação, estocagem de CO2, biodiversidade, controle de temperatura e mananciais d'água. </p>
-              <a role="button" class="btn btn-link heading saiba" href="#">Saiba Mais</a>
+                <p class="lead">Acesse nossa base de dados sobre vegetação, estocagem de CO2, biodiversidade, controle
+                    de temperatura e mananciais d'água. </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="min-vh-100 h-100 my-3" id="about">
-      <div class="container h-100 bg-l">
+<section class="min-vh-100 h-100 bg-heading" id="about">
+    <div class="container h-100">
         <div class="row h-100 justify-content-center align-items-center">
           <div class="col-xl-6 my-auto col-md-12 order-lg-2">
             <div class="p-5">
@@ -186,9 +136,11 @@
           </div>
           <div class="col-xl-6 col-md-12 order-lg-1">
             <div class="p-5">
-              <h2 class="h1 heading">Humboldt</h2>
-              <p class="h4">Somos uma startup brasileira que fomenta iniciativas de <span class="heading text-uppercase font-weight-bold">preservação e restauração de biomas</span>, com foco em soluções para áreas rurais ociosas.</p>
-              <a role="button" class="btn btn-link heading saiba" href="#">Saiba Mais</a>
+                <h2 class="h1">Humboldt</h2>
+                <p class="h4">Somos uma startup brasileira que fomenta iniciativas de <span
+                            class="text-uppercase font-weight-bold">preservação e restauração de biomas</span>, com foco
+                    em soluções para áreas rurais ociosas.</p>
+                <a role="button" class="text-primary saiba" href="sobre.php">Saiba Mais</a>
             </div>
           </div>
         </div>
@@ -207,7 +159,7 @@
             <div class="p-5">
               <h2 class="h1">Contato</h2>
               <p class="h4">Um canal para você tirar dúvidas e falar com a gente</p>
-              <a role="button" class="btn btn-link heading saiba" href="#">Contato</a>
+                <a role="button" class=" heading saiba" href="contato.php">Contato</a>
             </div>
           </div>
         </div>
@@ -228,28 +180,9 @@
         </div>
       </div>
     </section>
-
-  <footer style="background-color: #232f3e" class="footer text-white mt-auto py-3">
-      <div class="container">
-          <span class="pl-3 pr-3 border-right">
-            <button class="bg-transparent border-0 text-white" id="privacy">Privacidade</button>
-          </span>
-          <span class="pl-3 pr-3 border-right">
-            <button class="bg-transparent border-0 text-white" id="terms">Termos do Site</button>
-          </span>
-          <span class="pl-3 pr-3">&copy; 2019, Humboldt Brasil. Todos os direitos reservados. </span>
-      </div>
-  </footer>
-
-  <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
   <script type="text/javascript">
     new BeerSlider( document.getElementById( "slider" ) );    
   </script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="js/jsScript.js"></script>
 </body>
-
+<?php include_once 'footer.html'; ?>
 </html>
